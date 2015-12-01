@@ -22,16 +22,16 @@ alt="devDependency status" height="18"/>
 alt="npm version" height="18">
 </a>
 
-hasSymbolSupport module. Tests if Symbol and Symbol~iterator exist and are
-the correct types.
+hasSymbolSupport module. Tests if `Symbol` exists and creates the correct
+type.
 
-**Version**: 1.0.0  
+**Version**: 1.0.1  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_has-symbol-support-x--module.exports"></a>
 ### `module.exports` : <code>boolean</code> ⏏
-Indicates if Symbol and Symbol~iterator exist and are the correct types.
-`true`, if they exists and are the correct types, otherwise `false`.
+Indicates if `Symbol`exists and creates the correct type.
+`true`, if it exists and creates the correct type, otherwise `false`.
 
 **Kind**: Exported member  

@@ -1,0 +1,46 @@
+{
+  "name": "has-symbol-support-x",
+  "version": "1.0.0",
+  "description": "hasSymbolSupport module. Tests if Symbol is supported.",
+  "homepage": "https://github.com/Xotic750/has-symbol-support-x",
+  "author": {
+    "name": "Graham Fairweather",
+    "email": "xotic750@gmail.com"
+  },
+  "copyright": "Copyright (c) 2015",
+  "keywords": [
+    "hasSymbolSupport",
+    "module",
+    "javascript",
+    "nodejs",
+    "browser"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "*"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xotic750/has-symbol-support-x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xotic750/has-symbol-support-x/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "es5-shim": "^4.3.1",
+    "jscs": "^2.5.1",
+    "uglify-js": "^2.6.1",
+    "browserify": "12.0.1",
+    "jasmine-node": "^1.14.5",
+    "jsdoc-to-markdown": "^1.2.1"
+  },
+  "scripts": {
+    "test": "jasmine-node --matchall tests/spec/",
+    "style": "jscs index.js",
+    "docs": "jsdoc2md --name-format code --example-lang js table index.js > README.md",
+    "build": "browserify -e index.js -o lib/has-symbol-support-x.js -u 'crypto' -s returnExports",
+    "build-uglify": "uglifyjs lib/has-symbol-support-x.js -o lib/has-symbol-support-x.min.js --compress unused=false,dead_code=false --keep-fnames --mangle --beautify ascii_only=true,beautify=false --source-map lib/has-symbol-support-x.map"
+  }
+}

@@ -6,7 +6,7 @@
   es3:true, esnext:true, plusplus:true, maxparams:1, maxdepth:1,
   maxstatements:6, maxcomplexity:2 */
 
-/*global expect, module, require, describe, it, returnExports */
+/*global JSON:true, expect, module, require, describe, it, returnExports */
 
 (function () {
   'use strict';
@@ -14,6 +14,12 @@
   var hasSymbolSupport;
   if (typeof module === 'object' && module.exports) {
     require('es5-shim');
+    require('es5-shim/es5-sham');
+    if (typeof JSON === 'undefined') {
+      JSON = {};
+    }
+    require('json3').runInContext(null, JSON);
+    require('es6-shim');
     hasSymbolSupport = require('../../index.js');
   } else {
     hasSymbolSupport = returnExports;

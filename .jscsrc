@@ -12,6 +12,8 @@
   "disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"],
   "requireLineFeedAtFileEnd": true,
   "requireCapitalizedConstructors": true,
+  "requireVarDeclFirst": false,
+  "requireMultipleVarDecl": false,
   "validateLineBreaks": "LF",
   "validateQuoteMarks": "'",
   "jsDoc": {

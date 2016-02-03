@@ -1,6 +1,6 @@
 {
   "name": "has-symbol-support-x",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "hasSymbolSupport module. Tests if Symbol is supported.",
   "homepage": "https://github.com/Xotic750/has-symbol-support-x",
   "author": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "es5-shim": "^4.5.0",
+    "es5-shim": "^4.5.2",
     "es6-shim": "^0.34.2",
     "json3": "^3.3.2",
     "jscs": "^2.9.0",

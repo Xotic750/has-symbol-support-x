@@ -1,4 +1,5 @@
 <a name="module_has-symbol-support-x"></a>
+
 ## has-symbol-support-x
 <a href="https://travis-ci.org/Xotic750/has-symbol-support-x"
 title="Travis status">
@@ -42,11 +43,12 @@ es5-shim.js to be able to work properly.
 `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
 behave as closely as possible to ECMAScript 6 (Harmony).
 
-**Version**: 1.0.11  
+**Version**: 1.1.0  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_has-symbol-support-x--module.exports"></a>
+
 ### `module.exports` : <code>boolean</code> ⏏
 Indicates if `Symbol`exists and creates the correct type.
 `true`, if it exists and creates the correct type, otherwise `false`.

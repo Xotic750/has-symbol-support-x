@@ -27,7 +27,7 @@ Tests if `Symbol` exists and creates the correct type.
 
 Requires ES3 or above.
 
-**Version**: 1.1.1  
+**Version**: 1.2.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  

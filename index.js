@@ -26,26 +26,19 @@
  *
  * Requires ES3 or above.
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
  * @module has-symbol-support-x
  */
 
-/* eslint strict: 1, symbol-description: 1 */
+'use strict';
 
-/* global module */
-
-;(function () { // eslint-disable-line no-extra-semi
-
-  'use strict';
-
-  /**
-   * Indicates if `Symbol`exists and creates the correct type.
-   * `true`, if it exists and creates the correct type, otherwise `false`.
-   *
-   * @type boolean
-   */
-  module.exports = typeof Symbol === 'function' && typeof Symbol() === 'symbol';
-}());
+/**
+ * Indicates if `Symbol`exists and creates the correct type.
+ * `true`, if it exists and creates the correct type, otherwise `false`.
+ *
+ * @type boolean
+ */
+module.exports = typeof Symbol === 'function' && typeof Symbol('') === 'symbol';

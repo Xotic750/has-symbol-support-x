@@ -11,6 +11,22 @@
       }
     ]
   ],
+  "env": {
+    "esm": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "loose": false,
+            "modules": false,
+            "spec": true,
+            "useBuiltIns": false,
+            "debug": false
+          }
+        ]
+      ]
+    }
+  },
   "plugins": [
     "@babel/plugin-transform-property-mutators",
     [

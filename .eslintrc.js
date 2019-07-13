@@ -48,7 +48,9 @@ module.exports = {
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-rules}
    */
-  rules: {},
+  rules: {
+    'jsdoc/no-undefined-types': ['error', {definedTypes: ['NumberConstructor', 'StringConstructor']}],
+  },
 
   /**
    * Webpack-literate module resolution plugin for eslint-plugin-import.

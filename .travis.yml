@@ -7,9 +7,9 @@ branches:
 notifications:
   email: false
 node_js:
-  - "10"
-  - "9"
-  - "8"
+  - '10'
+  - '9'
+  - '8'
 script:
   - npm run test:ci
 matrix:

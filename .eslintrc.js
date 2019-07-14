@@ -1,7 +1,6 @@
 /**
  * @file Manages the root configuration settings for project wide eslint.
- * @module eslint/root/configuration
- * @see {@link https://eslint.org} for further information.
+ * @see {@link https://eslint.org} For further information.
  */
 
 module.exports = {

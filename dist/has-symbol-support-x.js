@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-13T02:01:24.979Z",
+  "date": "2019-07-14T21:44:38.395Z",
   "describe": "",
   "description": "Tests if ES6 Symbol is supported.",
   "file": "has-symbol-support-x.js",
-  "hash": "62534d28d54e7a515f3c",
+  "hash": "0e796f71f6051781e4c6",
   "license": "MIT",
-  "version": "2.0.2"
+  "version": "2.0.3"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -297,7 +297,6 @@ function attempt(fn) {
     };
   }
 }
-;
 
 
 // EXTERNAL MODULE: ./node_modules/is-symbol/index.js

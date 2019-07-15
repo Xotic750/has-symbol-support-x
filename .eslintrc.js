@@ -48,7 +48,19 @@ module.exports = {
    * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-rules}
    */
   rules: {
-    'jsdoc/no-undefined-types': ['error', {definedTypes: ['NumberConstructor', 'StringConstructor']}],
+    'jsdoc/no-undefined-types': [
+      'error',
+      {
+        definedTypes: [
+          'ArrayConstructor',
+          'ObjectConstructor',
+          'NumberConstructor',
+          'StringConstructor',
+          'BooleanConstructor',
+          'FunctionConstructor',
+        ],
+      },
+    ],
   },
 
   /**

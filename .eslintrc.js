@@ -58,6 +58,7 @@ module.exports = {
           'StringConstructor',
           'BooleanConstructor',
           'FunctionConstructor',
+          'RegExpConstructor',
         ],
       },
     ],

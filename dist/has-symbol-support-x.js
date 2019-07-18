@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-18T16:07:38.117Z",
+  "date": "2019-07-18T18:28:03.673Z",
   "describe": "",
   "description": "Tests if ES6 Symbol is supported.",
   "file": "has-symbol-support-x.js",
   "hash": "ce9a22034841f6a2b175",
   "license": "MIT",
-  "version": "2.0.10"
+  "version": "2.0.11"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {

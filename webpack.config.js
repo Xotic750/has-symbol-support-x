@@ -32,7 +32,7 @@ const getGlobal = function() {
   return Function('return this')();
 };
 
-const filename = PACKAGE.name;
+const filename = PACKAGE.name.replace('@xotic750/', '');
 const library = camelCase(filename);
 const dist = path.resolve(__dirname, 'dist');
 

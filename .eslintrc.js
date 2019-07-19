@@ -66,6 +66,8 @@ module.exports = {
           'ReferenceErrorConstructor',
           'EvalErrorConstructor',
           'RangeErrorConstructor',
+          'Readonly',
+          'ReadonlyArray',
         ],
       },
     ],

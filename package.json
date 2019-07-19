@@ -1,6 +1,6 @@
 {
   "name": "has-symbol-support-x",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Tests if ES6 Symbol is supported.",
   "homepage": "https://github.com/Xotic750/has-symbol-support-x",
   "author": {
@@ -49,7 +49,7 @@
     "url": "https://github.com/Xotic750/has-symbol-support-x/issues"
   },
   "dependencies": {
-    "attempt-x": "^2.0.11",
+    "attempt-x": "^2.0.12",
     "is-symbol": "^1.0.2"
   },
   "devDependencies": {

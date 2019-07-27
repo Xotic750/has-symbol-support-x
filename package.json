@@ -1,6 +1,6 @@
 {
   "name": "has-symbol-support-x",
-  "version": "2.0.20",
+  "version": "2.0.21",
   "description": "Tests if ES6 Symbol is supported.",
   "homepage": "https://github.com/Xotic750/has-symbol-support-x",
   "author": {
@@ -50,7 +50,7 @@
     "url": "https://github.com/Xotic750/has-symbol-support-x/issues"
   },
   "dependencies": {
-    "attempt-x": "^2.0.21",
+    "attempt-x": "^2.0.22",
     "is-symbol": "^1.0.2"
   },
   "devDependencies": {
@@ -72,7 +72,7 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-lodash": "^3.3.4",
-    "caniuse-lite": "^1.0.30000985",
+    "caniuse-lite": "^1.0.30000986",
     "chalk": "^2.4.2",
     "concurrently": "^4.1.1",
     "cross-env": "^5.2.0",

@@ -8,6 +8,6 @@ module.exports = {
   rules: {
     complexity: ['warn', 6],
     'max-lines-per-function': ['warn', {max: 15, skipBlankLines: true, skipComments: true}],
-    'max-params': ['error', 2],
+    'max-params': ['warn', 2],
   },
 };

@@ -12,38 +12,8 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const eslintFriendlyFormatter = require('eslint-friendly-formatter');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const camelCase = require('lodash/camelCase');
+const globalObject = require('webpack-global-object-x');
 const PACKAGE = require('./package.json');
-
-const getGlobal = function() {
-  'use strict';
-
-  /* eslint-disable-next-line no-var */
-  var objectPrototype = {}.constructor.prototype;
-  /* eslint-disable-next-line no-var,prefer-destructuring */
-  var defineProperty = objectPrototype.defineProperty;
-  /* eslint-disable-next-line no-var */
-  var $globalThis;
-
-  try {
-    defineProperty(objectPrototype, '$$globalThis$$', {
-      /* eslint-disable-next-line object-shorthand */
-      get: function() {
-        return this;
-      },
-      /* eslint-disable-next-line prettier/prettier */
-      configurable: true
-    });
-
-    /* eslint-disable-next-line no-undef */
-    $globalThis = typeof $$globalThis$$ === 'undefined' ? self || window : $$globalThis$$;
-
-    delete objectPrototype.$$globalThis$$;
-
-    return $globalThis;
-  } catch (error) {
-    return self || window;
-  }
-};
 
 const filename = PACKAGE.name.replace('@xotic750/', '');
 const library = camelCase(filename);
@@ -216,7 +186,7 @@ module.exports = function generateConfig(env) {
      */
     output: {
       // https://github.com/webpack/webpack/issues/6525
-      globalObject: `(${getGlobal.toString()}())`,
+      globalObject: `(${globalObject.toString()}())`,
       library,
       libraryTarget: 'umd',
       path: dist,

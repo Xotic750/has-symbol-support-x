@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-09-05T18:57:44.244Z",
+  "date": "2020-01-30T12:30:54.725Z",
   "describe": "",
   "description": "Tests if ES6 Symbol is supported.",
   "file": "has-symbol-support-x.js",
